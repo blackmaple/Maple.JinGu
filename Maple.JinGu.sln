@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36202.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maple.JinGu.Metadata", "Maple.JinGu.Metadata\Maple.JinGu.Metadata.csproj", "{CDE50B40-DBD4-4CC1-8F1E-CAF239AB2C28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maple.JinGu.Windows", "Maple.JinGu.Windows\Maple.JinGu.Windows.csproj", "{E700D8B3-479A-432E-8BA1-5EB1180D259E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CDE50B40-DBD4-4CC1-8F1E-CAF239AB2C28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDE50B40-DBD4-4CC1-8F1E-CAF239AB2C28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDE50B40-DBD4-4CC1-8F1E-CAF239AB2C28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDE50B40-DBD4-4CC1-8F1E-CAF239AB2C28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E700D8B3-479A-432E-8BA1-5EB1180D259E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E700D8B3-479A-432E-8BA1-5EB1180D259E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E700D8B3-479A-432E-8BA1-5EB1180D259E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E700D8B3-479A-432E-8BA1-5EB1180D259E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {04259AA5-E04F-49D5-A9FB-AFEF72D282E0}
+	EndGlobalSection
+EndGlobal
