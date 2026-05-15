@@ -70,10 +70,10 @@ namespace Maple.JinGu.Metadata
             /// class ["mscorlib"."System"."String"]
             /// </summary>
             /// <returns>class System.String</returns>
-             /*
+             
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_desc", "System.String")]
             public partial nint M_DESC { get; set; } 
-*/
+
 
             /// <summary>
             /// 0x38 System.Int32[] m_condition
@@ -100,40 +100,40 @@ namespace Maple.JinGu.Metadata
             /// struct ["mscorlib"."System"."Int32"]
             /// </summary>
             /// <returns>struct System.Int32</returns>
-             /*
+             
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_id", "System.Int32")]
             public partial System.Int32 M_ID { get; set; } 
-*/
+
 
             /// <summary>
             /// 0x4C System.Int32 m_type
             /// struct ["mscorlib"."System"."Int32"]
             /// </summary>
             /// <returns>struct System.Int32</returns>
-             /*
+             
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_type", "System.Int32")]
             public partial System.Int32 M_TYPE { get; set; } 
-*/
+
 
             /// <summary>
             /// 0x50 System.Int32 m_lvMax
             /// struct ["mscorlib"."System"."Int32"]
             /// </summary>
             /// <returns>struct System.Int32</returns>
-             /*
+             
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_lvMax", "System.Int32")]
             public partial System.Int32 M_LV_MAX { get; set; } 
-*/
+
 
             /// <summary>
             /// 0x54 System.Int32 m_exp
             /// struct ["mscorlib"."System"."Int32"]
             /// </summary>
             /// <returns>struct System.Int32</returns>
-             /*
+             
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_exp", "System.Int32")]
             public partial System.Int32 M_EXP { get; set; } 
-*/
+
         }
 
         /// <summary>

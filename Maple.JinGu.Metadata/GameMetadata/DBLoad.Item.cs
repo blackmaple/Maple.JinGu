@@ -1,3 +1,5 @@
+using Maple.MonoGameAssistant.MetadataCollections;
+
 namespace Maple.JinGu.Metadata
 {
     /// <summary>
@@ -55,10 +57,10 @@ namespace Maple.JinGu.Metadata
             /// static  System.Collections.Generic.Dictionary<System.Int32 , DBLoad.ItemData> get_Dic()
             /// </summary>
             /// <returns>class System.Collections.Generic.Dictionary<System.Int32 , DBLoad.ItemData></returns>
-             /*
+             
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassMethodMetadataAttribute("get_Dic", "System.Collections.Generic.Dictionary<System.Int32,DBLoad.ItemData>", CallConvs = [typeof(System.Runtime.CompilerServices.CallConvSuppressGCTransition)])]
-            public static partial nint GET_DIC(); 
-*/
+            public static partial SysPtrDictionary<int,ItemData.Ptr_ItemData> GET_DIC(); 
+
             /// <summary>
             /// static  System.Void Init()
             /// </summary>

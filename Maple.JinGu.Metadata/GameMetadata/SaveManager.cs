@@ -56,10 +56,10 @@ namespace Maple.JinGu.Metadata
             /// class ["Assembly-CSharp".""."SaveManager"]
             /// </summary>
             /// <returns>class SaveManager</returns>
-             /*
+             
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("_instance", "SaveManager")]
-            public static partial nint _INSTANCE { get; set; } 
-*/
+            public static partial SaveManager.Ptr_SaveManager _INSTANCE { get; set; } 
+
 
             /// <summary>
             /// 0x0 System.Int32 OffsetOfInstanceIDInCPlusPlusObject
@@ -106,20 +106,20 @@ namespace Maple.JinGu.Metadata
             /// class ["Assembly-CSharp".""."SaveData"]
             /// </summary>
             /// <returns>class SaveData</returns>
-             /*
+             
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_saveData", "SaveData")]
-            public partial nint M_SAVE_DATA { get; set; } 
-*/
+            public partial SaveData.Ptr_SaveData M_SAVE_DATA { get; set; } 
+
 
             /// <summary>
             /// 0x30 GlobalData m_globalData
             /// class ["Assembly-CSharp".""."GlobalData"]
             /// </summary>
             /// <returns>class GlobalData</returns>
-             /*
+             
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_globalData", "GlobalData")]
-            public partial nint M_GLOBAL_DATA { get; set; } 
-*/
+            public partial GlobalData.Ptr_GlobalData M_GLOBAL_DATA { get; set; } 
+
 
             /// <summary>
             /// 0x38 System.Int32 m_autoIndex

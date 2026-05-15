@@ -30,40 +30,40 @@ namespace Maple.JinGu.Metadata
             /// struct ["mscorlib"."System"."Int32"]
             /// </summary>
             /// <returns>struct System.Int32</returns>
-             /*
+             
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_id", "System.Int32")]
             public partial System.Int32 M_ID { get; set; } 
-*/
+
 
             /// <summary>
             /// 0x14 System.Int32 m_npcId
             /// struct ["mscorlib"."System"."Int32"]
             /// </summary>
             /// <returns>struct System.Int32</returns>
-             /*
+             
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_npcId", "System.Int32")]
             public partial System.Int32 M_NPC_ID { get; set; } 
-*/
+
 
             /// <summary>
             /// 0x18 System.Int32 m_level
             /// struct ["mscorlib"."System"."Int32"]
             /// </summary>
             /// <returns>struct System.Int32</returns>
-             /*
+             
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_level", "System.Int32")]
             public partial System.Int32 M_LEVEL { get; set; } 
-*/
+
 
             /// <summary>
             /// 0x1C System.Int32 m_characterId
             /// struct ["mscorlib"."System"."Int32"]
             /// </summary>
             /// <returns>struct System.Int32</returns>
-             /*
+             
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_characterId", "System.Int32")]
             public partial System.Int32 M_CHARACTER_ID { get; set; } 
-*/
+
         }
 
         /// <summary>

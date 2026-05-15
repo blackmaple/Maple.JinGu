@@ -1,3 +1,5 @@
+using Maple.MonoGameAssistant.MetadataCollections;
+
 namespace Maple.JinGu.Metadata
 {
     /// <summary>
@@ -5,7 +7,7 @@ namespace Maple.JinGu.Metadata
     /// [System.Collections.Generic.Dictionary<K , V>]=>[System.Object]
     /// [UnityEngine.ISerializationCallbackReceiver]
     /// </summary>
-    [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.GenericClassParentMetadataAttribute(typeof(Maple.MonoGameAssistant.MetadataExtensions.MetadataCollector.GenericClassMetadataCollector<>), typeof(SerializedDictionaryGeneric<, >.Ptr_SerializedDictionaryGeneric))]
+    [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.GenericClassParentMetadataAttribute(typeof(Maple.MonoGameAssistant.MetadataExtensions.MetadataCollector.GenericClassMetadataCollector<>), typeof(SerializedDictionaryGeneric<,>.Ptr_SerializedDictionaryGeneric))]
     [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.GenericClassModelMetadataAttribute]
     public partial class SerializedDictionaryGeneric<K, V>
         where K : unmanaged where V : unmanaged
@@ -19,7 +21,7 @@ namespace Maple.JinGu.Metadata
 
             public static implicit operator Ptr_SerializedDictionaryGeneric(System.IntPtr ptr) => new Ptr_SerializedDictionaryGeneric(ptr);
             public static implicit operator System.IntPtr(Ptr_SerializedDictionaryGeneric ptr) => ptr.m_Pointer;
-            public static implicit operator bool (Ptr_SerializedDictionaryGeneric ptr) => ptr.m_Pointer != System.IntPtr.Zero;
+            public static implicit operator bool(Ptr_SerializedDictionaryGeneric ptr) => ptr.m_Pointer != System.IntPtr.Zero;
         }
 
         /// <summary>
@@ -32,41 +34,41 @@ namespace Maple.JinGu.Metadata
             /// class ["mscorlib"."System"."String"]
             /// </summary>
             /// <returns>class System.String</returns>
-             /*
-            public const nint VERSION_NAME = ; 
+            /*
+           public const nint VERSION_NAME = ; 
 */
             /// <summary>
             /// 0x0 System.String HashSizeName
             /// class ["mscorlib"."System"."String"]
             /// </summary>
             /// <returns>class System.String</returns>
-             /*
-            public const nint HASH_SIZE_NAME = ; 
+            /*
+           public const nint HASH_SIZE_NAME = ; 
 */
             /// <summary>
             /// 0x0 System.String KeyValuePairsName
             /// class ["mscorlib"."System"."String"]
             /// </summary>
             /// <returns>class System.String</returns>
-             /*
-            public const nint KEY_VALUE_PAIRS_NAME = ; 
+            /*
+           public const nint KEY_VALUE_PAIRS_NAME = ; 
 */
             /// <summary>
             /// 0x0 System.String ComparerName
             /// class ["mscorlib"."System"."String"]
             /// </summary>
             /// <returns>class System.String</returns>
-             /*
-            public const nint COMPARER_NAME = ; 
+            /*
+           public const nint COMPARER_NAME = ; 
 */
             /// <summary>
             /// 0x10 System.Int32[] _buckets
             /// class ["mscorlib"."System"."Int32[]"]
             /// </summary>
             /// <returns>class System.Int32[]</returns>
-             /*
-            [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("_buckets", "System.Int32[]")]
-            public partial nint _BUCKETS { get; set; } 
+            /*
+           [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("_buckets", "System.Int32[]")]
+           public partial nint _BUCKETS { get; set; } 
 */
 
             /// <summary>
@@ -74,9 +76,9 @@ namespace Maple.JinGu.Metadata
             /// class ["mscorlib".""."Entry[]"]
             /// </summary>
             /// <returns>class System.Collections.Generic.Dictionary.Entry<K , V>[]</returns>
-             /*
-            [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("_entries", "System.Collections.Generic.Dictionary.Entry<K,V>[]")]
-            public partial nint _ENTRIES { get; set; } 
+            /*
+           [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("_entries", "System.Collections.Generic.Dictionary.Entry<K,V>[]")]
+           public partial nint _ENTRIES { get; set; } 
 */
 
             /// <summary>
@@ -84,9 +86,9 @@ namespace Maple.JinGu.Metadata
             /// interface ["mscorlib"."System.Collections.Generic"."IEqualityComparer`1"]
             /// </summary>
             /// <returns>interface System.Collections.Generic.IEqualityComparer<K></returns>
-             /*
-            [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("_comparer", "System.Collections.Generic.IEqualityComparer<K>")]
-            public partial nint _COMPARER { get; set; } 
+            /*
+           [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("_comparer", "System.Collections.Generic.IEqualityComparer<K>")]
+           public partial nint _COMPARER { get; set; } 
 */
 
             /// <summary>
@@ -94,9 +96,9 @@ namespace Maple.JinGu.Metadata
             /// class ["mscorlib".""."KeyCollection"]
             /// </summary>
             /// <returns>class System.Collections.Generic.Dictionary.KeyCollection<K , V></returns>
-             /*
-            [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("_keys", "System.Collections.Generic.Dictionary.KeyCollection<K,V>")]
-            public partial nint _KEYS { get; set; } 
+            /*
+           [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("_keys", "System.Collections.Generic.Dictionary.KeyCollection<K,V>")]
+           public partial nint _KEYS { get; set; } 
 */
 
             /// <summary>
@@ -104,9 +106,9 @@ namespace Maple.JinGu.Metadata
             /// class ["mscorlib".""."ValueCollection"]
             /// </summary>
             /// <returns>class System.Collections.Generic.Dictionary.ValueCollection<K , V></returns>
-             /*
-            [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("_values", "System.Collections.Generic.Dictionary.ValueCollection<K,V>")]
-            public partial nint _VALUES { get; set; } 
+            /*
+           [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("_values", "System.Collections.Generic.Dictionary.ValueCollection<K,V>")]
+           public partial nint _VALUES { get; set; } 
 */
 
             /// <summary>
@@ -114,9 +116,9 @@ namespace Maple.JinGu.Metadata
             /// class ["mscorlib"."System"."Object"]
             /// </summary>
             /// <returns>class System.Object</returns>
-             /*
-            [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("_syncRoot", "System.Object")]
-            public partial nint _SYNC_ROOT { get; set; } 
+            /*
+           [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("_syncRoot", "System.Object")]
+           public partial nint _SYNC_ROOT { get; set; } 
 */
 
             /// <summary>
@@ -124,9 +126,9 @@ namespace Maple.JinGu.Metadata
             /// struct ["mscorlib"."System"."Int32"]
             /// </summary>
             /// <returns>struct System.Int32</returns>
-             /*
-            [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("_count", "System.Int32")]
-            public partial System.Int32 _COUNT { get; set; } 
+            /*
+           [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("_count", "System.Int32")]
+           public partial System.Int32 _COUNT { get; set; } 
 */
 
             /// <summary>
@@ -134,9 +136,9 @@ namespace Maple.JinGu.Metadata
             /// struct ["mscorlib"."System"."Int32"]
             /// </summary>
             /// <returns>struct System.Int32</returns>
-             /*
-            [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("_freeList", "System.Int32")]
-            public partial System.Int32 _FREE_LIST { get; set; } 
+            /*
+           [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("_freeList", "System.Int32")]
+           public partial System.Int32 _FREE_LIST { get; set; } 
 */
 
             /// <summary>
@@ -144,9 +146,9 @@ namespace Maple.JinGu.Metadata
             /// struct ["mscorlib"."System"."Int32"]
             /// </summary>
             /// <returns>struct System.Int32</returns>
-             /*
-            [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("_freeCount", "System.Int32")]
-            public partial System.Int32 _FREE_COUNT { get; set; } 
+            /*
+           [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("_freeCount", "System.Int32")]
+           public partial System.Int32 _FREE_COUNT { get; set; } 
 */
 
             /// <summary>
@@ -154,9 +156,9 @@ namespace Maple.JinGu.Metadata
             /// struct ["mscorlib"."System"."Int32"]
             /// </summary>
             /// <returns>struct System.Int32</returns>
-             /*
-            [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("_version", "System.Int32")]
-            public partial System.Int32 _VERSION { get; set; } 
+            /*
+           [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("_version", "System.Int32")]
+           public partial System.Int32 _VERSION { get; set; } 
 */
 
             /// <summary>
@@ -164,9 +166,9 @@ namespace Maple.JinGu.Metadata
             /// class ["mscorlib"."System.Collections.Generic"."List`1"]
             /// </summary>
             /// <returns>class System.Collections.Generic.List<K></returns>
-             /*
-            [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_Keys", "System.Collections.Generic.List<K>")]
-            public partial nint M_KEYS { get; set; } 
+            /*
+           [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_Keys", "System.Collections.Generic.List<K>")]
+           public partial nint M_KEYS { get; set; } 
 */
 
             /// <summary>
@@ -174,10 +176,10 @@ namespace Maple.JinGu.Metadata
             /// class ["mscorlib"."System.Collections.Generic"."List`1"]
             /// </summary>
             /// <returns>class System.Collections.Generic.List<V></returns>
-             /*
-            [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_Values", "System.Collections.Generic.List<V>")]
-            public partial nint M_VALUES { get; set; } 
-*/
+
+            [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_Values", default)]
+            public partial SysPtrList<V> M_VALUES { get; set; }
+
         }
 
         /// <summary>
@@ -197,18 +199,18 @@ namespace Maple.JinGu.Metadata
             ///   System.Void OnAfterDeserialize()
             /// </summary>
             /// <returns>struct System.Void</returns>
-             /*
+             
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassMethodMetadataAttribute("OnAfterDeserialize", "System.Void", CallConvs = [typeof(System.Runtime.CompilerServices.CallConvSuppressGCTransition)])]
             public partial void ON_AFTER_DESERIALIZE(); 
-*/
+
             /// <summary>
             ///   System.Void OnBeforeSerialize()
             /// </summary>
             /// <returns>struct System.Void</returns>
-             /*
+             
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassMethodMetadataAttribute("OnBeforeSerialize", "System.Void", CallConvs = [typeof(System.Runtime.CompilerServices.CallConvSuppressGCTransition)])]
             public partial void ON_BEFORE_SERIALIZE(); 
-*/
+
         }
 
         /// <summary>

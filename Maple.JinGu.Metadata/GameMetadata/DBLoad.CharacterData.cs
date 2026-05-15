@@ -1,3 +1,5 @@
+using Maple.MonoGameAssistant.Core;
+
 namespace Maple.JinGu.Metadata
 {
     /// <summary>
@@ -30,50 +32,50 @@ namespace Maple.JinGu.Metadata
             /// class ["mscorlib"."System"."String"]
             /// </summary>
             /// <returns>class System.String</returns>
-             /*
-            [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_name", "System.String")]
-            public partial nint M_NAME { get; set; } 
-*/
+             
+            //[Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_name", "System.String")]
+            //public partial nint M_NAME { get; set; } 
+
 
             /// <summary>
             /// 0x18 System.String m_desc
             /// class ["mscorlib"."System"."String"]
             /// </summary>
             /// <returns>class System.String</returns>
-             /*
-            [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_desc", "System.String")]
-            public partial nint M_DESC { get; set; } 
-*/
+             
+            //[Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_desc", "System.String")]
+            //public partial nint M_DESC { get; set; } 
+
 
             /// <summary>
             /// 0x20 System.String m_chengHao
             /// class ["mscorlib"."System"."String"]
             /// </summary>
             /// <returns>class System.String</returns>
-             /*
-            [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_chengHao", "System.String")]
-            public partial nint M_CHENG_HAO { get; set; } 
-*/
+             
+            //[Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_chengHao", "System.String")]
+            //public partial nint M_CHENG_HAO { get; set; } 
+
 
             /// <summary>
             /// 0x28 System.Int32[] m_skills
             /// class ["mscorlib"."System"."Int32[]"]
             /// </summary>
             /// <returns>class System.Int32[]</returns>
-             /*
+             
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_skills", "System.Int32[]")]
-            public partial nint M_SKILLS { get; set; } 
-*/
+            public partial PMonoArray<int> M_SKILLS { get; set; } 
+
 
             /// <summary>
             /// 0x30 System.Int32[] m_passives
             /// class ["mscorlib"."System"."Int32[]"]
             /// </summary>
             /// <returns>class System.Int32[]</returns>
-             /*
+             
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_passives", "System.Int32[]")]
-            public partial nint M_PASSIVES { get; set; } 
-*/
+            public partial PMonoArray<int> M_PASSIVES { get; set; } 
+
 
             /// <summary>
             /// 0x38 System.String m_behaviorTree
@@ -90,10 +92,10 @@ namespace Maple.JinGu.Metadata
             /// struct ["mscorlib"."System"."Int32"]
             /// </summary>
             /// <returns>struct System.Int32</returns>
-             /*
+             
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_id", "System.Int32")]
             public partial System.Int32 M_ID { get; set; } 
-*/
+
 
             /// <summary>
             /// 0x44 System.Int32 m_res
@@ -110,100 +112,100 @@ namespace Maple.JinGu.Metadata
             /// struct ["mscorlib"."System"."Int32"]
             /// </summary>
             /// <returns>struct System.Int32</returns>
-             /*
+             
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_hp", "System.Int32")]
             public partial System.Int32 M_HP { get; set; } 
-*/
+
 
             /// <summary>
             /// 0x4C System.Int32 m_mp
             /// struct ["mscorlib"."System"."Int32"]
             /// </summary>
             /// <returns>struct System.Int32</returns>
-             /*
+             
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_mp", "System.Int32")]
             public partial System.Int32 M_MP { get; set; } 
-*/
+
 
             /// <summary>
             /// 0x50 System.Int32 m_damage
             /// struct ["mscorlib"."System"."Int32"]
             /// </summary>
             /// <returns>struct System.Int32</returns>
-             /*
+             
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_damage", "System.Int32")]
             public partial System.Int32 M_DAMAGE { get; set; } 
-*/
+
 
             /// <summary>
             /// 0x54 System.Int32 m_atk
             /// struct ["mscorlib"."System"."Int32"]
             /// </summary>
             /// <returns>struct System.Int32</returns>
-             /*
+             
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_atk", "System.Int32")]
             public partial System.Int32 M_ATK { get; set; } 
-*/
+
 
             /// <summary>
             /// 0x58 System.Int32 m_def
             /// struct ["mscorlib"."System"."Int32"]
             /// </summary>
             /// <returns>struct System.Int32</returns>
-             /*
+             
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_def", "System.Int32")]
             public partial System.Int32 M_DEF { get; set; } 
-*/
+
 
             /// <summary>
             /// 0x5C System.Int32 m_crt
             /// struct ["mscorlib"."System"."Int32"]
             /// </summary>
             /// <returns>struct System.Int32</returns>
-             /*
+             
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_crt", "System.Int32")]
             public partial System.Int32 M_CRT { get; set; } 
-*/
+
 
             /// <summary>
             /// 0x60 System.Int32 m_eva
             /// struct ["mscorlib"."System"."Int32"]
             /// </summary>
             /// <returns>struct System.Int32</returns>
-             /*
+             
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_eva", "System.Int32")]
             public partial System.Int32 M_EVA { get; set; } 
-*/
+
 
             /// <summary>
             /// 0x64 System.Int32 m_speed
             /// struct ["mscorlib"."System"."Int32"]
             /// </summary>
             /// <returns>struct System.Int32</returns>
-             /*
+             
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_speed", "System.Int32")]
             public partial System.Int32 M_SPEED { get; set; } 
-*/
+
 
             /// <summary>
             /// 0x68 System.Int32 m_move
             /// struct ["mscorlib"."System"."Int32"]
             /// </summary>
             /// <returns>struct System.Int32</returns>
-             /*
+             
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_move", "System.Int32")]
             public partial System.Int32 M_MOVE { get; set; } 
-*/
+
 
             /// <summary>
             /// 0x6C System.Int32 m_range
             /// struct ["mscorlib"."System"."Int32"]
             /// </summary>
             /// <returns>struct System.Int32</returns>
-             /*
+             
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_range", "System.Int32")]
             public partial System.Int32 M_RANGE { get; set; } 
-*/
+
 
             /// <summary>
             /// 0x70 System.Int32 m_sizeType
@@ -220,10 +222,13 @@ namespace Maple.JinGu.Metadata
             /// struct ["mscorlib"."System"."Int32"]
             /// </summary>
             /// <returns>struct System.Int32</returns>
-             /*
-            [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_atkScope", "System.Int32")]
-            public partial System.Int32 M_ATK_SCOPE { get; set; } 
-*/
+             
+            //[Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_atkScope", "System.Int32")]
+            //public partial System.Int32 M_ATK_SCOPE { get; set; }
+
+            [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_book", "System.Int32")]
+            public partial System.Int32 M_BOOK { get; set; }
+
         }
 
         /// <summary>

@@ -1,3 +1,6 @@
+using Maple.MonoGameAssistant.Core;
+using Maple.MonoGameAssistant.MetadataCollections;
+
 namespace Maple.JinGu.Metadata
 {
     /// <summary>
@@ -98,10 +101,10 @@ namespace Maple.JinGu.Metadata
             /// class ["System.Core".""."Slot[]"]
             /// </summary>
             /// <returns>class System.Collections.Generic.HashSet.Slot<K>[]</returns>
-             /*
-            [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("_slots", "System.Collections.Generic.HashSet.Slot<K>[]")]
-            public partial nint _SLOTS { get; set; } 
-*/
+             
+            //[Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("_slots",default)]
+            //public partial nint _SLOTS { get; set; } 
+
 
             /// <summary>
             /// 0x20 System.Collections.Generic.IEqualityComparer<K> _comparer
@@ -128,20 +131,20 @@ namespace Maple.JinGu.Metadata
             /// struct ["mscorlib"."System"."Int32"]
             /// </summary>
             /// <returns>struct System.Int32</returns>
-             /*
-            [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("_count", "System.Int32")]
-            public partial System.Int32 _COUNT { get; set; } 
-*/
+             
+            //[Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("_count", "System.Int32")]
+            //public partial System.Int32 _COUNT { get; set; } 
+
 
             /// <summary>
             /// 0x34 System.Int32 _lastIndex
             /// struct ["mscorlib"."System"."Int32"]
             /// </summary>
             /// <returns>struct System.Int32</returns>
-             /*
-            [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("_lastIndex", "System.Int32")]
-            public partial System.Int32 _LAST_INDEX { get; set; } 
-*/
+             
+            //[Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("_lastIndex", "System.Int32")]
+            //public partial System.Int32 _LAST_INDEX { get; set; } 
+
 
             /// <summary>
             /// 0x38 System.Int32 _freeList
@@ -168,11 +171,24 @@ namespace Maple.JinGu.Metadata
             /// class ["mscorlib"."System.Collections.Generic"."List`1"]
             /// </summary>
             /// <returns>class System.Collections.Generic.List<K></returns>
-             /*
-            [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_Keys", "System.Collections.Generic.List<K>")]
-            public partial nint M_KEYS { get; set; } 
-*/
+             
+            [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_Keys", default)]
+            public partial SysPtrList<K> M_KEYS { get; set; } 
+
         }
+
+        //partial struct Ptr_SerializedHashSetGeneric : ISysPtrHashSet<K>
+        //{
+        //    public int Count => _COUNT;
+
+        //    public int LastIndex => _LAST_INDEX;
+
+        //    public PMonoArray<Ref_MonoSlot<K>> Slots => _SLOTS;
+
+ 
+        //    public IEnumerable<PMonoSlot<Ref_MonoSlot<K>, K>> AsRefEnumerable() =>
+        //        MetadataCollectionsExtensions.PtrHashSetAsRefEnumerable<Ptr_SerializedHashSetGeneric,K>(this);
+        //}
 
         /// <summary>
         /// class ["Assembly-CSharp".""."SerializedHashSet`1"]
@@ -191,18 +207,18 @@ namespace Maple.JinGu.Metadata
             ///   System.Void OnAfterDeserialize()
             /// </summary>
             /// <returns>struct System.Void</returns>
-             /*
+             
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassMethodMetadataAttribute("OnAfterDeserialize", "System.Void", CallConvs = [typeof(System.Runtime.CompilerServices.CallConvSuppressGCTransition)])]
             public partial void ON_AFTER_DESERIALIZE(); 
-*/
+
             /// <summary>
             ///   System.Void OnBeforeSerialize()
             /// </summary>
             /// <returns>struct System.Void</returns>
-             /*
+             
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassMethodMetadataAttribute("OnBeforeSerialize", "System.Void", CallConvs = [typeof(System.Runtime.CompilerServices.CallConvSuppressGCTransition)])]
             public partial void ON_BEFORE_SERIALIZE(); 
-*/
+
         }
 
         /// <summary>

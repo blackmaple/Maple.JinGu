@@ -1,3 +1,5 @@
+using Maple.MonoGameAssistant.Core;
+
 namespace Maple.JinGu.Metadata
 {
     /// <summary>
@@ -30,59 +32,59 @@ namespace Maple.JinGu.Metadata
             /// class ["mscorlib"."System"."String"]
             /// </summary>
             /// <returns>class System.String</returns>
-             /*
+             
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_name", "System.String")]
-            public partial nint M_NAME { get; set; } 
-*/
+            public partial PMonoString M_NAME { get; set; } 
 
-            /// <summary>
-            /// 0x18 System.String m_itemType
-            /// class ["mscorlib"."System"."String"]
-            /// </summary>
-            /// <returns>class System.String</returns>
-             /*
-            [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_itemType", "System.String")]
-            public partial nint M_ITEM_TYPE { get; set; } 
-*/
+
+            ///// <summary>
+            ///// 0x18 System.String m_itemType
+            ///// class ["mscorlib"."System"."String"]
+            ///// </summary>
+            ///// <returns>class System.String</returns>
+             
+            //[Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_type", "System.Int32")]
+            //public partial int M_TYPE { get; set; }
+
 
             /// <summary>
             /// 0x20 System.String m_describe
             /// class ["mscorlib"."System"."String"]
             /// </summary>
             /// <returns>class System.String</returns>
-             /*
+
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_describe", "System.String")]
-            public partial nint M_DESCRIBE { get; set; } 
-*/
+            public partial PMonoString M_DESCRIBE { get; set; } 
+
 
             /// <summary>
             /// 0x28 System.String m_detailDesc
             /// class ["mscorlib"."System"."String"]
             /// </summary>
             /// <returns>class System.String</returns>
-             /*
-            [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_detailDesc", "System.String")]
-            public partial nint M_DETAIL_DESC { get; set; } 
-*/
+             
+            [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_describe", "System.String")]
+            public partial PMonoString M_DETAIL_DESC { get; set; } 
+
 
             /// <summary>
             /// 0x30 System.Int32 m_id
             /// struct ["mscorlib"."System"."Int32"]
             /// </summary>
             /// <returns>struct System.Int32</returns>
-             /*
+             
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_id", "System.Int32")]
-            public partial System.Int32 M_ID { get; set; } 
-*/
+            public partial System.Int32 M_ID { get; set; }
+
 
             /// <summary>
             /// 0x34 System.Int32 m_quality
             /// struct ["mscorlib"."System"."Int32"]
             /// </summary>
             /// <returns>struct System.Int32</returns>
-             /*
-            [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_quality", "System.Int32")]
-            public partial System.Int32 M_QUALITY { get; set; } 
+            /*
+           [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_quality", "System.Int32")]
+           public partial System.Int32 M_QUALITY { get; set; } 
 */
 
             /// <summary>
@@ -90,9 +92,9 @@ namespace Maple.JinGu.Metadata
             /// struct ["mscorlib"."System"."Int32"]
             /// </summary>
             /// <returns>struct System.Int32</returns>
-             /*
-            [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_value", "System.Int32")]
-            public partial System.Int32 M_VALUE { get; set; } 
+            /*
+           [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_value", "System.Int32")]
+           public partial System.Int32 M_VALUE { get; set; } 
 */
 
             /// <summary>
@@ -100,10 +102,12 @@ namespace Maple.JinGu.Metadata
             /// struct ["mscorlib"."System"."Int32"]
             /// </summary>
             /// <returns>struct System.Int32</returns>
-             /*
+
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_type", "System.Int32")]
             public partial System.Int32 M_TYPE { get; set; } 
-*/
+            [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_type2", "System.Int32")]
+            public partial int M_TYPE2 { get; set; }
+
         }
 
         /// <summary>
