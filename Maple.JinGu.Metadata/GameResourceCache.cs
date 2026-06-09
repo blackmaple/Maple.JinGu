@@ -28,7 +28,7 @@ namespace Maple.JinGu.Metadata
             return resource is not null;
         }
         public required GameMonsterResourceEx[] AllNPCResources { get; init; }
-        public required GameMonsterResourceEx[] NPCResources { get; init; }  
+        public required GameMonsterResourceEx[] NPCResources { get; init; }
 
 
         public bool TryGetNPCResource(string? category, string objectId, [MaybeNullWhen(false)] out GameMonsterResource resource)
@@ -120,7 +120,7 @@ namespace Maple.JinGu.Metadata
                 CurrencyResources = currencyResources,
                 InventoryResources = inventoryResources,
                 AllNPCResources = allNpcResources,
-                NPCResources = [.. allNpcResources.Where(r =>  r.CharacterPointer != nint.Zero)],
+                NPCResources = [.. allNpcResources.Where(r => r.CharacterPointer != nint.Zero)],
                 SkillResources = skillResources,
 
                 PtrSaveManager = SaveManager.Ptr_SaveManager._INSTANCE,
@@ -152,6 +152,7 @@ namespace Maple.JinGu.Metadata
                     DisplayName = itemName.ToString(),
                     DisplayDesc = itemDesc.ToString(),
                     DisplayCategory = itemTypeFullName,
+                    DisplayImage = Guid.NewGuid().ToString("N"),
                 };
             }
 
@@ -180,6 +181,8 @@ namespace Maple.JinGu.Metadata
                     DisplayName = itemName.ToString(),
                     DisplayDesc = itemDesc.ToString(),
                     DisplayCategory = itemTypeFullName,
+                    DisplayImage = Guid.NewGuid().ToString("N"),
+
                 };
             }
 
@@ -416,7 +419,7 @@ namespace Maple.JinGu.Metadata
         //}
 
 
-        static IEnumerable<GameMonsterResource> LoadCharacterResources(GameMetadataContext context, GameSkillResource[] skills, GameObjectResource[] bookResources)
+        static IEnumerable<GameMonsterResourceEx> LoadCharacterResources(GameMetadataContext context, GameSkillResource[] skills, GameObjectResource[] bookResources)
         {
             var characterDIC = Character.Ptr_Character.GET_DIC();
             foreach (var character in characterDIC.AsRefEnumerable())
@@ -430,11 +433,14 @@ namespace Maple.JinGu.Metadata
 
                 var characterDesc = bookData?.DisplayDesc;
                 var characterType = nameof(Character);
-
+                var characterBook = bookId;
                 GameSkillInfoDTO[] skillInfos = [.. GetGameSkills(skills, characterPtr.M_SKILLS), .. GetGamePassiveSkills(skills, characterPtr.M_PASSIVES)];
 
-                yield return new GameMonsterResource
+                yield return new GameMonsterResourceEx
                 {
+                    BookPointer = bookData?.ObjectPointer ?? nint.Zero,
+                    BookId = bookId,
+                    CharacterPointer = characterPtr,
                     ObjectId = characterPtr.Ptr.ToString(),
                     ObjectPointer = characterPtr.Ptr,
                     DisplayName = characterName,
@@ -518,7 +524,7 @@ namespace Maple.JinGu.Metadata
         static IEnumerable<GameMonsterResourceEx> LoadCharacterResourcesEx(GameMetadataContext context, GameSkillResource[] skills)
         {
             GameObjectResource[] bookResources = [.. LoadBookResources(context)];
-            GameMonsterResource[] characterRes = [.. LoadCharacterResources(context, skills, bookResources)];
+            GameMonsterResourceEx[] characterRes = [.. LoadCharacterResources(context, skills, bookResources)];
             GameMonsterResource[] npcResources = [.. LoadNPCResources(context)];
 
             foreach (var npc in npcResources)
@@ -534,7 +540,9 @@ namespace Maple.JinGu.Metadata
                     ObjectId = npc.ObjectId,
                     ObjectPointer = npc.ObjectPointer,
                     DisplayCategory = npc.DisplayCategory,
-
+                    DisplayImage = character?.BookId.ToString(),
+                    BookPointer = character?.BookPointer ?? default,
+                    BookId = character?.BookId ?? default,
                     DisplayName = character?.DisplayName,
                     DisplayDesc = character?.DisplayDesc,
                     MonsterAttributes = character?.MonsterAttributes,
@@ -560,7 +568,8 @@ namespace Maple.JinGu.Metadata
     public class GameMonsterResourceEx : GameMonsterResource
     {
 
-
+        public nint BookPointer { set; get; }
+        public int BookId { set; get; }
         public nint CharacterPointer { get; set; }
     }
 

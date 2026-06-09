@@ -52,10 +52,10 @@ namespace Maple.JinGu.Metadata
             /// class ["mscorlib"."System"."String"]
             /// </summary>
             /// <returns>class System.String</returns>
-            /*
+            
            [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassPropertyMetadataAttribute("m_head", "System.String")]
-           public partial nint M_HEAD { get; set; } 
-*/
+           public partial PMonoString M_HEAD { get; set; } 
+
 
             /// <summary>
             /// 0x28 System.String m_desc

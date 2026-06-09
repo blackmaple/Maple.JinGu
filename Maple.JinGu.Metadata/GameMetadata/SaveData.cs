@@ -873,7 +873,9 @@ namespace Maple.JinGu.Metadata
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassMethodMetadataAttribute("ChangeItem", "System.Void", CallConvs = [typeof(System.Runtime.CompilerServices.CallConvSuppressGCTransition)])]
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassMethodParameterMetadataAttribute("System.Int32", 0)]
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassMethodParameterMetadataAttribute("System.Int32", 1)]
-            public partial void CHANGE_ITEM(System.Int32 itemId, System.Int32 changeNum);
+            [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassMethodParameterMetadataAttribute("System.Boolean", 2)]
+
+            public partial void CHANGE_ITEM(System.Int32 itemId, System.Int32 changeNum, System.Boolean needTips=false);
 
             /// <summary>
             ///   System.Void ChangeNpc(System.Int32 npcId, System.Int32 newId)

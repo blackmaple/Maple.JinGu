@@ -54,9 +54,9 @@ namespace Maple.JinGu.Windows
             this.Cache = await this.MonoTaskAsync((p) => GameResourceCache.Create(p)).ConfigureAwait(false);
         }
 
-        private Task<GameCheatService> GetCheatServiceThrowIfNotInGameAsync()
+        private Task<GameEnvService> GetCheatServiceThrowIfNotInGameAsync()
         {
-            return this.MonoTaskAsync((p) => GameCheatService.CreateCheatService(this.Cache));
+            return this.MonoTaskAsync((p) => GameEnvService.CreateGameEnvService(this.Cache));
         }
 
         public override ValueTask<GameCurrencyDisplayDTO[]> GetListCurrencyDisplayAsync()

@@ -6,21 +6,22 @@ using Microsoft.Extensions.Logging;
 
 namespace Maple.JinGu.Metadata
 {
-    public readonly partial struct GameCheatService(GameResourceCache cache, SaveData.Ptr_SaveData saveData)
+    public readonly partial struct GameEnvService(GameResourceCache cache, SaveData.Ptr_SaveData saveData)
     {
+
         public SaveData.Ptr_SaveData PtrSaveData { get; } = saveData;
         public GameResourceCache Cache { get; } = cache;
         public GameMetadataContext Context => Cache.Context;
         private ILogger Logger => Context.Logger;
 
 
-        public static GameCheatService CreateCheatService(GameResourceCache cache)
+        public static GameEnvService CreateGameEnvService(GameResourceCache cache)
         {
             if (!cache.TryGetSaveData(out var ptr_SaveData))
             {
-                return GameException.ThrowIfNotLoaded<GameCheatService>();
+                return GameException.ThrowIfNotLoaded<GameEnvService>();
             }
-            return new GameCheatService(cache, ptr_SaveData);
+            return new GameEnvService(cache, ptr_SaveData);
         }
 
 
@@ -100,6 +101,7 @@ namespace Maple.JinGu.Metadata
                 ObjectId = this.PtrSaveData.Ptr.ToString(),
                 DisplayName = characterName.ToString(),
                 DisplayCategory = nameof(LearderInfo),
+                DisplayImage = nameof(LearderInfo)
                 //  DisplayDesc = characterName.ToString(), 
             };
 
@@ -108,7 +110,7 @@ namespace Maple.JinGu.Metadata
             npcInfoDic.ON_BEFORE_SERIALIZE();
             var npcInfoList = npcInfoDic.M_VALUES.AsEnumerable().Select(p => p.M_ID).ToArray();
 
-            foreach (var npc in this.Cache.NPCResources )
+            foreach (var npc in this.Cache.NPCResources)
             {
                 var npcData = new NpcData.Ptr_NpcData(npc.ObjectPointer);
                 if (npcInfoList.Contains(npcData.M_ID))
@@ -119,6 +121,7 @@ namespace Maple.JinGu.Metadata
                         DisplayName = npc.DisplayName,
                         DisplayCategory = npc.DisplayCategory,
                         DisplayDesc = npc.DisplayDesc,
+                        DisplayImage = npc.DisplayImage,
                     };
                 }
             }
@@ -133,7 +136,7 @@ namespace Maple.JinGu.Metadata
             {
                 return GameException.Throw<GameCharacterSkillDTO>($"NOT FOUND {monsterObjectDTO.MonsterObject}");
             }
-            var npcData = new NpcData.Ptr_NpcData   (monsterResource.ObjectPointer);
+            var npcData = new NpcData.Ptr_NpcData(monsterResource.ObjectPointer);
             //var characterId = 0;
             //var npcId = 0;
             //if (monsterResource.DisplayCategory == nameof(Friend))
@@ -148,7 +151,7 @@ namespace Maple.JinGu.Metadata
             //    characterId = animalData.M_CHARACTER_ID;
             //    npcId = animalData.M_NPC_ID;
             //}
-            if (npcData  )
+            if (npcData)
             {
                 var npcId = npcData.M_ID;
                 //var characterInfo = this.PtrSaveData.GET_CHARACTER_INFO(characterId);

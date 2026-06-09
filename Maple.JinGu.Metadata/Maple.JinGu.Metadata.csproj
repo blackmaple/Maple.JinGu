@@ -7,12 +7,12 @@
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Maple.MonoGameAssistant.Core" Version="1.5.2-rc" />
-		<PackageReference Include="Maple.MonoGameAssistant.GameDTO" Version="1.5.0-rc" />
-		<PackageReference Include="Maple.MonoGameAssistant.MetadataExtensions" Version="1.5.1-rc" />
-		<PackageReference Include="Maple.MonoGameAssistant.MetadataSourceGenerator" Version="1.5.2-rc" />
-		<PackageReference Include="Maple.MonoGameAssistant.MetadataCollections" Version="1.5.0-rc" />
-		<PackageReference Include="Maple.UnityAssistant.Resource" Version="0.26.419.10-rc" />
+		<PackageReference Include="Maple.MonoGameAssistant.Core" Version="1.6.0-rc" />
+		<PackageReference Include="Maple.MonoGameAssistant.GameDTO" Version="1.6.0-rc" />
+		<PackageReference Include="Maple.MonoGameAssistant.MetadataExtensions" Version="1.6.0-rc" />
+		<PackageReference Include="Maple.MonoGameAssistant.MetadataSourceGenerator" Version="1.6.0-rc" />
+		<PackageReference Include="Maple.MonoGameAssistant.MetadataCollections" Version="1.6.0-rc" />
+		<PackageReference Include="Maple.UnityAssistant.Resource" Version="0.26.609.1-rc" />
 
 	</ItemGroup>
 	<ItemGroup>

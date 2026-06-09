@@ -149,11 +149,11 @@ namespace Maple.JinGu.Metadata
             /// </summary>
             /// <param name = "id">enum DBLoad.EffectId</param>
             /// <returns>class UnityEngine.Sprite</returns>
-             /*
+             
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassMethodMetadataAttribute("LoadEffect", "UnityEngine.Sprite", CallConvs = [typeof(System.Runtime.CompilerServices.CallConvSuppressGCTransition)])]
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassMethodParameterMetadataAttribute("DBLoad.EffectId", 0)]
-            public static partial nint LOAD_EFFECT(DBLoad.EffectId id); 
-*/
+            public static partial nint LOAD_EFFECT(int id); 
+
             /// <summary>
             /// static  UnityEngine.Sprite LoadEffectBg(System.Int32 type)
             /// </summary>
@@ -179,21 +179,21 @@ namespace Maple.JinGu.Metadata
             /// </summary>
             /// <param name = "name">class System.String</param>
             /// <returns>class UnityEngine.Sprite</returns>
-             /*
-            [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassMethodMetadataAttribute("LoadHead", "UnityEngine.Sprite", CallConvs = [typeof(System.Runtime.CompilerServices.CallConvSuppressGCTransition)])]
-            [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassMethodParameterMetadataAttribute("System.String", 0)]
-            public static partial nint LOAD_HEAD(nint name); 
-*/
+             
+            //[Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassMethodMetadataAttribute("LoadHead", "UnityEngine.Sprite", CallConvs = [typeof(System.Runtime.CompilerServices.CallConvSuppressGCTransition)])]
+            //[Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassMethodParameterMetadataAttribute("System.String", 0)]
+            //public static partial nint LOAD_HEAD(nint name); 
+
             /// <summary>
-            /// static  UnityEngine.Sprite LoadHead(System.Int32 charaterId)
+            /// static  UnityEngine.Sprite LoadHead(System.Int32 bookId)
             /// </summary>
             /// <param name = "charaterId">struct System.Int32</param>
             /// <returns>class UnityEngine.Sprite</returns>
-             /*
+             
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassMethodMetadataAttribute("LoadHead", "UnityEngine.Sprite", CallConvs = [typeof(System.Runtime.CompilerServices.CallConvSuppressGCTransition)])]
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassMethodParameterMetadataAttribute("System.Int32", 0)]
-            public static partial nint LOAD_HEAD(System.Int32 charaterId); 
-*/
+            public static partial nint LOAD_HEAD(System.Int32 bookId); 
+
             /// <summary>
             /// static  UnityEngine.Sprite LoadItem(System.Int32 id)
             /// </summary>
@@ -247,11 +247,10 @@ namespace Maple.JinGu.Metadata
             /// </summary>
             /// <param name = "type">enum DBLoad.EquipType</param>
             /// <returns>class UnityEngine.Sprite</returns>
-             /*
+             
             [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassMethodMetadataAttribute("LoadLeaderHead", "UnityEngine.Sprite", CallConvs = [typeof(System.Runtime.CompilerServices.CallConvSuppressGCTransition)])]
-            [Maple.MonoGameAssistant.MetadataExtensions.MetadataGenerator.ClassMethodParameterMetadataAttribute("DBLoad.EquipType", 0)]
-            public static partial nint LOAD_LEADER_HEAD(DBLoad.EquipType type); 
-*/
+            public static partial nint LOAD_LEADER_HEAD(); 
+
             /// <summary>
             /// static  UnityEngine.Sprite LoadNpcBody(System.Int32 npcId)
             /// </summary>
